@@ -188,6 +188,10 @@ set wrap
 set textwidth=79
 set formatoptions=tcqrn1
 
+" Gvim
+set guioptions-=m  "menu bar
+set guioptions-=T  "toolbar
+set guioptions-=r  "scrollbar
 "Set tabs
 set tabstop=4
 set shiftwidth=4
