@@ -85,6 +85,16 @@ syntax on
 let mapleader = " "
 nnoremap <SPACE> <Nop>
 
+" Toggle relative numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <leader>r :call NumberToggle()<cr>
+
 " Set JJ to Esc
 imap jj <Esc>
 
@@ -112,6 +122,9 @@ nmap <leader>z :bd<CR>
 " Open vimrc
 nmap <leader>ev :e $MYVIMRC<CR>
 
+" Reload vimrc
+nnoremap <leader>er :source $MYVIMRC<CR> :redraw!<CR>
+
 " Turn off search highlight
 nnoremap <leader>n :set hlsearch!<CR>
 
@@ -127,8 +140,6 @@ nnoremap <leader>n :set hlsearch!<CR>
 " Cut to clipboard
 " vmap <C-x> "+x<CR>
 
-" Reload vimrc
-:nnoremap <leader>es :source $MYVIMRC<CR> :redraw!<CR>
 
 " Auto insert braces
 inoremap { {}<Esc>ha
