@@ -60,6 +60,9 @@ Plugin 'tpope/vim-surround'
 " Easy commenting
 Plugin 'tpope/vim-commentary'
 
+" Autocomplete 
+Plugin 'AutoComplPop'
+
 " Better indenting
 Plugin 'michaeljsmith/vim-indent-object'
 
