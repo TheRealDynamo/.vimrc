@@ -93,6 +93,7 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
+set relativenumber
 nnoremap <leader>r :call NumberToggle()<cr>
 
 " Set JJ to Esc
