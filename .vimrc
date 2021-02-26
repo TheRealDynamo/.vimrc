@@ -170,7 +170,6 @@ set wrap
 set textwidth=79
 set formatoptions=tcqrn1
 
-
 " Show line numbers
 set number
 set relativenumber
