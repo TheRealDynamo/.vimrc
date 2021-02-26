@@ -258,7 +258,7 @@ nnoremap <C-[> :pop<CR>
 
 " Commenting
 nnoremamp <C-/> gcc
-vmap <C-A> gc
+vnoremap <M-A> gc
 
 " Searching
 nnoremap / /\v
