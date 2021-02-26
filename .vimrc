@@ -51,6 +51,22 @@ Plugin 'VundleVim/Vundle.vim'
 " Solarized theme (light or dark)
 Plugin 'altercation/vim-colors-solarized'
 
+" Onedark Theme
+Plugin 'joshdick/onedark.vim'
+
+" Better git
+Plugin 'tpope/vim-fugitive'
+
+" Syntax checking with linters
+" Plugin 'scrooloose/syntastic'
+
+" Smart autocompletion
+" Go to ~/.vim/bundle/youcompleteme to install
+" Plugin 'valloric/youcompleteme'
+
+" Vim fuzzy find
+Plugin 'kien/ctrlp.vim'
+
 " Easily jump around a file
 Plugin 'easymotion/vim-easymotion'
 
@@ -192,8 +208,6 @@ set guioptions-=L
 
 " Searching {{{
 
-nnoremap / /\v
-vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
@@ -239,6 +253,19 @@ nnoremap k gk
 nnoremap zC zM
 nnoremap zO zR
 
+" Tag jumping
+nnoremap <C-[> :pop<CR>
+
+" Commenting
+nnoremamp <C-/> gcc
+vmap <C-A> gc
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+nnoremap <C-f> /\v
+vnoremap <C-f> /\v
+
 " Quick quit
 map <leader>q :q<CR>
 
@@ -267,12 +294,12 @@ nnoremap <leader>t :tabnext<CR>
 nnoremap <leader>eq :tabclose<CR>
 
 " Move between windows
-map <leader>j <C-W>j<C-W>_
-map <leader>k <C-W>k<C-W>_
-map <leader>h <C-W>h<C-W>_
-map <leader>l <C-W>l<C-W>_
-map <leader>v <C-W>v<C-W>_
-map <leader>h <C-W>h<C-W>_
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>h <C-w>h
+map <leader>l <C-w>l
+map <leader>V :vsp<CR>
+map <leader>H :sp<CR>
 
 " Auto insert braces
 inoremap { {}<Esc>ha
