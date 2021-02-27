@@ -259,7 +259,7 @@ nnoremap zO zR
 nnoremap <C-[> :pop<CR>
 
 " Commenting
-nnoremamp <C-/> gcc
+nnoremap <C-_> gcc
 vnoremap <M-A> gc
 
 " Searching
