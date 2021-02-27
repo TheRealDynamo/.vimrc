@@ -61,11 +61,11 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 
 " Syntax checking with linters
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " Smart autocompletion
 " Go to ~/.vim/bundle/youcompleteme to install
-" Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 
 " Vim fuzzy find
 Plugin 'kien/ctrlp.vim'
@@ -80,7 +80,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
 " Autocomplete 
-Plugin 'AutoComplPop'
+" Plugin 'AutoComplPop'
 
 " Better indenting
 Plugin 'michaeljsmith/vim-indent-object'
@@ -208,6 +208,20 @@ set guioptions-=L
 
 " }}} GVIM
 
+" Syntastic {{{
+
+" Statusline
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" General
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" }}} Syntastic
+
 " Searching {{{
 
 set hlsearch
@@ -256,11 +270,11 @@ nnoremap zC zM
 nnoremap zO zR
 
 " Tag jumping
-nnoremap <C-[> :pop<CR>
+" nnoremap <C-[> :pop<CR>
 
 " Commenting
-nnoremap <C-_> gcc
-vnoremap <M-A> gc
+" nnoremap <C-/> gcc
+" vnoremap <M-A> gc
 
 " Searching
 nnoremap / /\v
@@ -305,8 +319,8 @@ map <leader>H :sp<CR>
 
 " Auto insert braces
 inoremap { {}<Esc>ha
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
+" inoremap ( ()<Esc>ha
+" inoremap [ []<Esc>ha
 
 " Remap help key.
 inoremap <F1> <ESC>:set invfullscreen<CR>a
