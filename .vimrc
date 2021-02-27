@@ -5,6 +5,9 @@
 " Don't try to be vi compatible
 set nocompatible
 
+set nobackup
+set noswapfile
+
 " Encoding
 set encoding=utf-8
 
