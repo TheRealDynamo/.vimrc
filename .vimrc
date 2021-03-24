@@ -61,11 +61,11 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 
 " Syntax checking with linters
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 
 " Smart autocompletion
 " Go to ~/.vim/bundle/youcompleteme to install
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
 
 " Vim fuzzy find
 Plugin 'kien/ctrlp.vim'
